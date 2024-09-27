@@ -4,8 +4,6 @@ import java.util.Random;
     This program will simulate rolling a dice
  */
 
-
-
 public class DiceRoll {
     public static void main(String[] args) {
 
