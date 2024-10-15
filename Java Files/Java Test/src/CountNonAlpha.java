@@ -15,11 +15,11 @@ public class CountNonAlpha {
         int numNonAlpha = 0;
 
         for (int i = 0; i < sentence.length(); i++){
-            if(Character.isDigit(sentence.charAt(i)) && (Character.isLetter(sentence.charAt(i)))){
-                continue;
+            if(!Character.isDigit(sentence.charAt(i)) && (!Character.isLetter(sentence.charAt(i)))){
+                numNonAlpha++;
             } 
             else{
-                numNonAlpha++;
+                continue;
             }
         }
         System.out.println("The number of non-alphanumeric characters is: " + numNonAlpha);
