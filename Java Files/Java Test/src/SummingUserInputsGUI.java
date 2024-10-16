@@ -8,6 +8,20 @@
 
 public class SummingUserInputsGUI {
     public static void main(String[]args){
+        int total = 0;
+        String userInput = "";
+
+        while(userInput.toLowerCase() != "quit"){
+            userInput = JOptionPane.showInputDialog("Enter number or 'quit' to calculate total: ");
+            if(!userInput.toLowerCase().equals("quit")){
+                int num = Integer.parseInt(userInput);
+                total += num;
+            }
+            else{
+                break;
+            }
+        }
+        JOptionPane.showMessageDialog(null, "The total is: " + total);
         
     }
 }
