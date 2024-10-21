@@ -87,6 +87,7 @@ public class BloodPressure {
             }
         }
 
+        System.out.println("Doctors note: ");
         if (total > 18){
             System.out.println("You are likely to develop high blood pressure");
         }
