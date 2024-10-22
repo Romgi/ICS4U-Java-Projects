@@ -25,7 +25,7 @@ public class EmailAnalyzerErrorChecking {
         }
     }
 
-    private static void analyzeEmail(String email){
+    public static void analyzeEmail(String email){
         int atIndex = email.indexOf('@');
         String name = email.substring(0, atIndex);
         int endIndex = email.length();
