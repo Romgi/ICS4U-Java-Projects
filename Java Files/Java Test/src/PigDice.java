@@ -12,6 +12,7 @@ public class PigDice {
 
         //Variable Initialization
         //All variables will be set to a default value before they are customized
+
         int winningScore = 30;
         String player1Name = "Player1";
         String player2Name = "Player2";
@@ -20,8 +21,6 @@ public class PigDice {
         int turnScore = 0;
 
         Boolean gameRunning = false;
-
-
 
         //Start the game by asking users to input their names
         System.out.println("Welcome to the pig dice game! \n To play, each player must first enter their name and decide on the winning score.");
@@ -61,6 +60,7 @@ public class PigDice {
         while(gameRunning){
             if(currentTurn == 1){
                 System.out.println(player1Name + "'s turn: ");
+                
                 
             }
         }
