@@ -20,6 +20,8 @@ public class PigDice {
         int currentTurn = 1;
         int turnScore = 0;
 
+        int diceRoll = 0;
+
         Boolean gameRunning = false;
 
         //Start the game by asking users to input their names
@@ -57,11 +59,17 @@ public class PigDice {
         System.out.println("Game on!");
 
 
-        while(gameRunning){
-            if(currentTurn == 1){
-                System.out.println(player1Name + "'s turn: ");
-                
-                
+        for(int i = 1; i > 0; i++){
+            if(i % 2 == 0){
+                System.out.println(player2Name + "'s turn");
+                diceRoll = (int)((6 - 1 + 1) * Math.random() + 1);
+                System.out.println("You rolled a: " + diceRoll);
+                turnScore = turnScore + diceRoll;
+                System.out.println("Current round score: " + turnScore);
+            }
+            else{
+                System.out.println(player1Name + "'s turn");
+
             }
         }
     }
