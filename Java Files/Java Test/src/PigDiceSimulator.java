@@ -5,7 +5,7 @@ import java.util.Random;
 public class PigDiceSimulator {
     
     public static void main(String[] args) {
-        int numberOfGames = 10000; // Number of simulations for each hold value
+        int numberOfGames = 1000000; // Number of simulations for each hold value
         int maxHoldValue = 100;
         int[] totalMoves = new int[maxHoldValue + 1];
         
