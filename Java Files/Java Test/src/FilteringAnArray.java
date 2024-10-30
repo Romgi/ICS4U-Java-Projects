@@ -14,13 +14,13 @@ public class FilteringAnArray {
 
         String[] array = new String[10];
 
-        for (int i = 0; i<=9; i++){
+        for (int i = 0; i<=9; i++){ //User inputs strings
             System.out.println("Enter string " + (i+1));
             array[i] = sc.nextLine();
         }
         System.out.println("The even length strings are: ");
-        for (int i = 0; i< array.length; i++){
-            if(array[i].length()%2 == 0){
+        for (int i = 0; i< array.length; i++){ //Loops through array
+            if(array[i].length()%2 == 0){ //If length is even 
                 System.out.println(array[i]);
             }
             else{
