@@ -12,11 +12,11 @@ public class CDCollection {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> CDs = new ArrayList<>();
 
-        System.out.println("Enter the name of a CD or enter 'quit': ");
+        System.out.println("Enter the name of a CD or enter 'quit': "); //User input
         while(!CDs.contains(("quit").toLowerCase())){
             CDs.add(sc.nextLine());
         }
-        CDs.remove(CDs.size() - 1);
+        CDs.remove(CDs.size() - 1); //Prints collection
         System.out.println("-----Current Collection-----");
         for(int i = 0; i < CDs.size(); i++){
             System.out.println(CDs.get(i));
