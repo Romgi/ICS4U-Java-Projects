@@ -6,16 +6,22 @@
 
 public class ProductOfNaturalNumbers {
     public static void main(String[] args) {
-        int test1 = 5;
+
+        //Test values
+        int test1 = 5; 
         int test2 = 8;
         int test3 = 16;
-        System.out.println(print_1_to_N_product(test1));
+
+        //Test cases
+        System.out.println(print_1_to_N_product(test1)); 
         System.out.println(print_1_to_N_product(test2));
         System.out.println(print_1_to_N_product(test3));
     }
+
+    //Calculation method
     public static int print_1_to_N_product(int n){
         int product = 1;
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= n; i++){ //Calculate factorial of n
             product = product * i;
         }
         return product;
