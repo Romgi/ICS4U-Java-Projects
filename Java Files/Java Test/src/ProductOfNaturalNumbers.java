@@ -4,11 +4,8 @@
  * This program will accept a positive integer 'n' and output the product of all natural numbers from 1 to n
  */
 
-import java.util.Scanner;
-
 public class ProductOfNaturalNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int test1 = 5;
         int test2 = 8;
         int test3 = 16;
