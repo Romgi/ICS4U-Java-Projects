@@ -15,13 +15,28 @@ public class PrimeNumberCheckerMethod {
         int num2 = 41;
 
         //Test cases
-        
+        System.out.println(num1 + is_prime_number(num1));
+        System.out.println(num2 + is_prime_number(num2));
     }
-
 
     //Prime number check function
     public static String is_prime_number(int num){
         String result = "";
+
+        //Loop through possible factors between 1 and num
+        for(int i = 2; i < num; i++){
+
+            //If number is divisible by any of the possible factors
+            if((num % i) == 0){ 
+                result = " is not a prime number.";
+                break;
+            }
+
+            //If not divisible by any other int, return prime
+            else{
+                result = " is a prime number";
+            }
+        }
         return result;
     }
 }
