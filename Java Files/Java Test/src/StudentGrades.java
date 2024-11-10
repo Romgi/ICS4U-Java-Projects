@@ -4,8 +4,8 @@
  * This program will help you manage student grades
  */
 
- import java.util.Scanner;
  import java.util.ArrayList;
+ import java.util.Scanner;
 
 public class StudentGrades {
     public static void main(String[] args) {
