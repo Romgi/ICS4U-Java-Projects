@@ -18,24 +18,10 @@ public class GCFCalculator {
     }
 
     public static Integer calculateGCf(int num1, int num2){
-        int gf1 = 0;
-        int gf2 = 0;
         int gcf = 0;
-
-        while (true){
-            for (int i = 1; i < num1; i++){
-                if(num1 % i == 0){
-                    if(i > gf1){
-                        gf1 = i;
-                    }
-                }
-            }
-            for (int i = 1; i < num2; i++){
-                if(num2 % i == 0){
-                    if(i > gf2){
-                        gf2 = i;
-                    }
-                }
+        for(int i = 1; i <= num1 && i <= num2; i++){
+            if(num1 % i == 0 && num2 % i == 0){
+                gcf = i;
             }
         }
         return gcf;
