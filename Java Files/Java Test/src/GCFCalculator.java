@@ -7,7 +7,7 @@
 public class GCFCalculator {
     public static void main(String[] args) {
 
-        int num1 = 16;
+        int num1 = 16; //Test Values
         int num2 = 32;
         System.out.println("The gcf is: " + calculateGCf(num1, num2));
 
@@ -19,7 +19,7 @@ public class GCFCalculator {
 
     public static Integer calculateGCf(int num1, int num2){
         int gcf = 0;
-        for(int i = 1; i <= num1 && i <= num2; i++){
+        for(int i = 1; i <= num1 && i <= num2; i++){ //Find GCF
             if(num1 % i == 0 && num2 % i == 0){
                 gcf = i;
             }
