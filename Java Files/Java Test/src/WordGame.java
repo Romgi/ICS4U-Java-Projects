@@ -27,7 +27,7 @@ public class WordGame {
 
         //Game Loop
         while (!inputWord.equals("quit")) {
-            System.out.println("Enter a 5 letter word that starts with: " + startLetter);
+            System.out.println("Enter a 5 letter word that starts with: " + startLetter + " or 'quit' to exit: ");
             inputWord = sc.nextLine().toLowerCase();
 
             //Word must be 5 characters and start with the starting letter
