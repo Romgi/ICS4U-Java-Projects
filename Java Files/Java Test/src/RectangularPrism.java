@@ -16,7 +16,7 @@ public class RectangularPrism {
         System.out.println("Enter the height"); dimensions.height = sc.nextDouble();
 
         double volume = dimensions.length * dimensions.width * dimensions.height;
-        double surfaceArea = (2 * ());
+        double surfaceArea = (2 * ((dimensions.width * dimensions.length) + (dimensions.height * dimensions.length) + (dimensions.height * dimensions.width)));
         System.out.println("The volume is: " + volume);
         System.out.println("The surface area is: " + surfaceArea);
    } 
