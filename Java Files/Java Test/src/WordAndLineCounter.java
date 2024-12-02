@@ -1,16 +1,16 @@
 /*
  * Jonathan Graydon
- * Display Line Number
- * This program will display a specific line from a file
+ * Word & Line Counter
+ * This program will count the total number of words and lines in a text file specified by the user
  */
 
- import java.io.BufferedReader;
- import java.io.FileReader;
- import java.io.IOException;
- import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
 
-public class DisplayLineNumber {
-    public static void main(String[] args) throws IOException{
+public class WordAndLineCounter {
+public static void main(String[] args) throws IOException{
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the name of a text file: ");
