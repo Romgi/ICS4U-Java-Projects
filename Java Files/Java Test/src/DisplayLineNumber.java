@@ -18,7 +18,7 @@ public class DisplayLineNumber {
         System.out.println("Enter the line number to view: ");
         int lineNumber = sc.nextInt();
 
-        for(int i = 0; i < lineNumber; i++){
+        for(int i = 0; i < lineNumber - 1; i++){
             reader.readLine();
         }
 
