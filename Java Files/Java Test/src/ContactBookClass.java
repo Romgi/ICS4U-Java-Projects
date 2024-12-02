@@ -23,11 +23,11 @@
  
              // Execute desired action
              switch (selectedAction) {
-                 case 0 -> {
+                 case 0: {
                      System.out.println("Quitting program...");
                      return;
                  }
-                 case 1 -> {
+                 case 1: {
                      System.out.println("Enter the contact's name: ");
                      String name = sc.nextLine();
  
@@ -43,7 +43,7 @@
                      addContact(name, new Contact(phoneNumber, address, email), contactList);
                      System.out.println("Contact added: " + name);
                  }
-                 case 2 -> {
+                 case 2: {
                      System.out.println("Enter the name of the contact to retrieve: ");
                      String contactToGet = sc.nextLine();
  
@@ -57,7 +57,7 @@
                          System.out.println("Contact not found.");
                      }
                  }
-                 default -> System.out.println("Invalid action. Please select a valid option.");
+                 default: System.out.println("Invalid action. Please select a valid option.");
              }
          }
      }
