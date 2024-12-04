@@ -22,8 +22,6 @@
  
          for (String curr_line = reader.readLine(); curr_line != null; curr_line = reader.readLine()) {
              numLines++;
-             String[] words = curr_line.trim().split("\\s+");
- 
              numWords += curr_line.split("\\s").length;
          }
  
