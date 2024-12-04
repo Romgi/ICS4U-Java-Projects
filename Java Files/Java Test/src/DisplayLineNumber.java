@@ -4,10 +4,10 @@
  * This program will display a specific line from a file
  */
 
- import java.io.BufferedReader;
- import java.io.FileReader;
- import java.io.IOException;
- import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class DisplayLineNumber {
     public static void main(String[] args) throws IOException{
