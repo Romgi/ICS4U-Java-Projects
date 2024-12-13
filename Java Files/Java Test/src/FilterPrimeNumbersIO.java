@@ -9,10 +9,13 @@
 
  public class FilterPrimeNumbersIO {
      public static void main(String[] args) {
+
+        //Change depending on input and output files
          String inputFileName = "listOfNumbers.txt";
          String outputFileName = "primeNumbers.txt";
          
          // Use try-with-resources to auto-close the streams.
+         //Good practice in the future to use this
          try (
              BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName))
