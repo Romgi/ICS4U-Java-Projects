@@ -1,3 +1,7 @@
+//Jonathan Graydon
+//Bouncing Square
+//This program will make a square bounce around on the screen
+
 // Define a class to store the square's attributes
 class Square {
   float x, y;       // Position of the square
