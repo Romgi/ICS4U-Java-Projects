@@ -2,7 +2,6 @@
 //Progress Bar
 //This program will display a progress bar animation
 
-
 int barWidth = 300;
 int barHeight = 30;
 int x = 50;
@@ -25,17 +24,11 @@ void draw() {
   fill(200);
   rect(x, y, barWidth, barHeight);
 
-  // Draw the filled portion of the progress bar
-  fill(0, 150, 255);
+  // Draw the filled part of the progress bar
+  fill(0, 255, 0);
   rect(x, y, barWidth * progress, barHeight);
 
-  // Draw the progress percentage text
-  fill(0);
-  textAlign(CENTER, CENTER);
-  textSize(16);
-  text(int(progress * 100) + "%", x + barWidth / 2, y + barHeight / 2);
-
-  // Display "Done!" after 10 seconds
+//Draws the end text
   if (progress >= 1) {
     textSize(20);
     text("Done!", width / 2, y + barHeight + 30);
