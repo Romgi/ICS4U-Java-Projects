@@ -1,11 +1,6 @@
-/**
- * Clock. 
- * 
- * The current time can be read with the second(), minute(), 
- * and hour() functions. In this example, sin() and cos() values
- * are used to set the position of the hands.
- */
-
+//Jonathan Graydon
+//Moving Clock Program
+//This will draw a functioning clock that will move with time
 int cx, cy;
 float secondsRadius;
 float minutesRadius;
