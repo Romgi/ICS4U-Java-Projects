@@ -43,8 +43,14 @@ public class TaskManager {
                     System.out.println("Enter the name of the task to mark completed: ");
                     sc.nextLine();
                     taskToAlter = sc.nextLine();
-                    taskList.replace(taskToAlter, "[Complete]");
-                    System.out.println("Marked " + taskToAlter + " as complete.");
+                    if(taskList.containsKey(taskToAlter)){
+                        taskList.replace(taskToAlter, "[Complete]");
+                        System.out.println("Marked " + taskToAlter + " as complete.");
+                    }
+                    else{
+                        System.out.println("Invalid task, " + taskList + " does not exist.");
+                    }
+
                     break;
                 case 3: //Print current task list
                     System.out.println("Current task list: \n" + taskList);
